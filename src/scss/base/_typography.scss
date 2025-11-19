@@ -1,0 +1,24 @@
+@use '../abstracts/variables' as v;
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: v.$font-text;
+    font-size: v.$font-size-general;
+    color: v.$text-color;
+    line-height: 1.5;
+}
+
+h1, h2, h3 {
+    font-family: v.$font-italic;
+}
+
+.heading-primary {
+
+}
+
+.heading-section {
+    
+}

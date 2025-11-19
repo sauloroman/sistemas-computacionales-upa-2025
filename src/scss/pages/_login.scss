@@ -1,0 +1,89 @@
+@use '../abstracts/variables' as v;
+
+.login {
+
+    height: 100vh;
+    position: relative;
+    
+    &__container {
+        width: 100%;
+        padding: 2rem;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+    }
+
+    &__image-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            animation: pulse 3s ease infinite;
+            width: 20rem;
+        }
+    }
+
+    &__content {
+        text-align: center;
+        margin-bottom: 3.2rem;
+    }
+
+    &__title {
+        margin: 2rem 0;
+        text-transform: uppercase;
+        font-size: 2.4rem;
+    }
+
+    &__field {
+        margin-bottom: 2rem;
+    }
+
+    &__label {
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        font-weight: bold; 
+        letter-spacing: 1px;
+        display: inline-block;
+        margin-bottom: 1rem;
+    }
+
+    &__password {
+        background-color: #000;
+        border: 1px solid #ddd;
+        padding: 1rem;
+        padding-right: 2rem;
+        border-radius: 100px;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    &__input {
+        background-color: #000;
+        border-radius: 100px;
+        padding: .5rem;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__button {
+
+        button {
+            width: 90%;
+        }
+    }
+
+    &__school {
+        text-align: center;
+        margin-top: 3rem;
+        font-size: 7.2rem;
+        font-weight: 900;
+        color: rgba(255, 255, 255, .2);
+        letter-spacing: 5px;
+    }
+
+}

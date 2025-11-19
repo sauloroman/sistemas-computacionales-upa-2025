@@ -1,0 +1,85 @@
+@use '../abstracts/variables' as v;
+
+.menu {
+    
+    &__title {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem
+    }
+
+    &__item {
+        background-color: transparent;
+        border: 1px solid #ddd;
+        border-radius: 10rem;
+        padding: 1rem 2rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: v.$text-color;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        &--active {
+            background-color: #000;
+            border: none;
+        }
+    }
+
+    &__container {
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 99999;
+        background-color: #5e5140;
+        height: 100lvh;
+        width: 65%;
+        transition: all .4s ease;
+        padding: 2rem;
+        
+        &--visible {
+            transform: translateX(0);
+        }
+
+        &--hidden {
+            transform: translateX(100%);
+        }
+    }
+
+    &__overlay {
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, .7);
+        transition: all .4s ease;
+
+        &--visible {
+            height: 100lvh;
+            width: 100%;
+            opacity: 1;
+        }
+
+        &--hidden {
+            width: 0;
+            height: 0;
+            opacity: 0;
+        }
+    }
+
+    &__content {
+        height: calc(100vh - 20rem);
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__logout {
+        margin-top: auto;
+    }
+
+}

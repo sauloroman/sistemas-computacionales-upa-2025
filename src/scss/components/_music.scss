@@ -1,0 +1,25 @@
+@use '../abstracts/variables' as v;
+
+.music {
+    width: 100%;
+    background-color: #000;
+    height: 5rem;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-family: v.$font-italic;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    border-bottom: 1px solid #888;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, .15);
+
+    &__icon {
+        font-size: 3.2rem;
+    }
+}

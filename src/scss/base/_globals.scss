@@ -1,0 +1,46 @@
+@use '../abstracts/variables' as v;
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    line-height: 1.5;
+    background-color: v.$bg-color;
+}
+
+input, select {
+    border: none;
+    width: 100%;
+}
+
+button, input[type="button"], a {
+    cursor: pointer;
+    width: 100%;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    object-fit: cover;
+    max-width: 100%;
+}
+
+ul, ol {
+    list-style: none;
+}

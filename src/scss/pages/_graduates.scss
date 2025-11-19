@@ -1,0 +1,46 @@
+@use '../abstracts/variables' as v;
+
+.graduates {
+
+    margin-top: 5rem;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem;
+
+        img {
+            width: 15rem;
+        }
+    }
+
+    &__list {
+        border-radius: 1rem;
+        width: 90%;
+        margin: 0 auto;
+        background-color: v.$brown-color;
+        padding: 2rem;
+    }
+
+    &__item {
+        text-align: center;
+        font-size: 1.4rem;
+        font-family: v.$font-italic;
+    }
+
+    &__item:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__logo {
+        filter: invert(1) brightness(0.5);
+        width: 20rem;
+    }
+
+}

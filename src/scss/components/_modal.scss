@@ -1,0 +1,33 @@
+.modal {
+
+    align-items: center;
+    background-color: rgba(255, 255, 255, .7);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-bottom: 1rem;
+    }
+
+    &__icon {
+        color: #000;
+        font-size: 2.4rem;
+    }
+
+    &__container {
+        position: absolute;
+        background-color: #fff;
+        width: 95%;
+        padding: 1rem;
+    }
+
+}

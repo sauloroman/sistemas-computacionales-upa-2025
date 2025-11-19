@@ -1,0 +1,96 @@
+@use '../abstracts/variables' as v;
+
+.ticket {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    &__icon {
+        width: 10rem;
+    }
+
+    &__no-ticket {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    &__expr {
+        font-size: 4rem;
+        font-weight: bold;
+        line-height: 1;
+    }
+}
+
+.ticket-main {
+    color: #000;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    
+    
+    &__image {
+        height: 14rem;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-y: 45%;
+        position: relative;
+    }
+
+    &__content {
+        padding: 2rem;
+    }
+    
+    &__event, &__career {
+        position: absolute;
+        background-color: #5e5140;
+        color: #fff;
+        padding: .2rem 1rem;
+        border-radius: 10rem;
+    }
+    
+    &__event {
+        top: 5%;
+        left: 2%;
+    }
+
+    &__career {
+        font-weight: bold;
+        bottom: 5%;
+        right: 1%;
+    }
+    
+    &__name {
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    
+    &__ticket {
+        margin: 1.4rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        img {
+            width: 18rem;
+        }
+    }
+
+    &__meta {
+        text-align: center;
+        font-family: v.$font-italic;
+        font-size: 1.6rem;
+    }
+
+}
