@@ -1,5 +1,5 @@
 import React from 'react'
-import { TicketMain } from './TicketMain'
+// import { TicketMain } from './TicketMain'
 import { NoTicket } from './NoTicket'
 
 export const Ticket: React.FC = () => {
