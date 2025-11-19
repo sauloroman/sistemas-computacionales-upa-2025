@@ -6,7 +6,7 @@ import arrow from '../assets/img/arrow-down.png'
 const format = (value: number) => value.toString().padStart(2, '0');
 
 const calculateTimeLeft = () => {
-  const targetDate = new Date('2025-12-13T20:00:00');
+  const targetDate = new Date('2025-12-13T21:00:00');
 
   const now = new Date();
   const totalSeconds = Math.max(0, Math.floor((targetDate.getTime() - now.getTime()) / 1000));

@@ -50,7 +50,7 @@ export const Location: React.FC = () => {
                 <p>Ubicación: <span>Blvd. San Marcos #109, 20207 Aguascalientes, Ags.</span></p>
               </li>
               <li className='location__time'>
-                <p>08:00 P.M. - 03:00 A.M.</p>
+                <p>09:00 P.M. - 03:00 A.M.</p>
               </li>
             </ul>
 

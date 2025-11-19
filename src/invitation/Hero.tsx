@@ -19,7 +19,7 @@ export const Hero: React.FC = () => {
       <p className="hero__date">
         <span>DIC</span> 
         <span>13</span> 
-        <span>8PM</span> 
+        <span>9PM</span> 
       </p>
       <div className="hero__location">
         <p>Salón Hopaliz</p>
