@@ -1,0 +1,36 @@
+.alert {
+    position: fixed;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 300px;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 500;
+    opacity: 0;
+    transition: all 0.35s ease;
+    z-index: 9999;
+
+    &__message {
+        margin: 0;
+    }
+
+    /* Variantes */
+    &--success {
+        background-color: #e6f9ee;
+        color: #0f8f46;
+        border: 1px solid #0f8f46;
+    }
+
+    &--error {
+        background-color: #fde8e8;
+        color: #d33030;
+        border: 1px solid #d33030;
+    }
+
+    /* Mostrar */
+    &--visible {
+        top: 20px;
+        opacity: 1;
+    }
+}

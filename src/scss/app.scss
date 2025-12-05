@@ -6,11 +6,13 @@
 @use './abstracts/variables';
 
 @use './components/button';
+@use './components/loader';
 @use './components/swiper';
 @use './components/music';
 @use './components/modal';
 @use './components/footer';
 @use './components/menu';
+@use './components/alert';
 
 @use './pages/invitation';
 @use './pages/graduates';

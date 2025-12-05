@@ -1,7 +1,15 @@
 export interface User {
     id: string,
     name: string,
-    codeQr: string,
-    quantityAdults: number,
-    quantityKids: number
+    adultsQuantity: number,
+    kidsQuantity: number,
+    adultsCounter: number,
+    kidsCounter: number,
+    qrCode: string,
+    phone: string,
+    keyPass: string,
+    table: string,
+    isActive: boolean,
+    event: string,
+    user: string,
 }

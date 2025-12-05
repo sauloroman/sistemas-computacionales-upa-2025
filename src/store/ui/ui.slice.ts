@@ -5,13 +5,23 @@ interface UIState {
     isModalOpen: boolean,
     isConfettiVisible: boolean,
     imageSelected: string | null,
+    alert: {
+        type: 'success' | 'error',
+        message: string,
+        isVisible: boolean
+    }
 }
 
 const initialState: UIState = {
     isDrawerOpen: true,
     isModalOpen: false,
     isConfettiVisible: false,
-    imageSelected: null
+    imageSelected: null,
+    alert: {
+        type: 'error',
+        message: '',
+        isVisible: false
+    }
 }
 
 export const uiSlice = createSlice({
@@ -33,6 +43,12 @@ export const uiSlice = createSlice({
 
         setIsConfettiVisible: (state, {payload}: PayloadAction<boolean>) => {
             state.isConfettiVisible = payload
+        },
+
+        setAlert: ( state, {payload}: PayloadAction<{type: 'success' | 'error', message: string, isVisible: boolean}>) => {
+            state.alert.type = payload.type
+            state.alert.message = payload.message
+            state.alert.isVisible = payload.isVisible
         }
 
     }   
@@ -44,4 +60,5 @@ export const {
     setImageSelected,
     setIsModalOpen,
     setIsConfettiVisible,
+    setAlert,
 } = uiSlice.actions

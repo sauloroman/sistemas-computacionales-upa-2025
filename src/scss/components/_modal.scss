@@ -30,4 +30,14 @@
         padding: 1rem;
     }
 
+    &__qr-box {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    &__qr {
+        width: 100rem;
+    }
+
 }

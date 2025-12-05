@@ -37,6 +37,7 @@ export const authSlice = createSlice({
 })
 
 export const {
+    setIsLoading,
     loginUser,
     logoutUser
 } = authSlice.actions
