@@ -12,9 +12,10 @@ export const useAuth = () => {
     const onLoginUser = async ( keyPass: string ) => {
         try {
             dispatch(setIsLoading(true))
-            const { data: ticket } = await abrasaAPI.get(`api/tickets/keyPass/${keyPass}`)
+            const { data: ticket } = await abrasaAPI.get(`/api/tickets/keyPass/${keyPass}`)
             dispatch(loginUser(ticket))
         } catch( error: any) {
+            console.log(error)
             const errorMessage = error.response.data.error
             dispatch(setAlert({ type: 'error', isVisible: true, message: errorMessage}))
         } finally {
