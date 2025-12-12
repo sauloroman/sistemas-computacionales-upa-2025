@@ -1,4 +1,5 @@
 import React from 'react'
+import layoutFile from '../assets/doc/layout-sistemas-2025.pdf'
 
 interface Props {
   quantityAdults: number,
@@ -20,6 +21,7 @@ export const TicketQuantity: React.FC<Props> = ({ quantityAdults, quantityKids }
         </div>
       </div>
       <p className='ticket-quantity__message'>La cantidad irá disminuyendo conforme vayan llegando tus invitados a recepción.</p>
+      <a href={layoutFile} target='_blank' referrerPolicy='no-referrer' className='button button--dark'>Ver Mesas</a>
     </div>
   )
 }

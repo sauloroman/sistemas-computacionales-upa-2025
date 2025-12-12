@@ -27,6 +27,11 @@
         font-size: 3rem;
     }
 
+    &--dark {
+        background-color: #000;
+        color: #fff;
+    }
+
     &--menu {
         position: fixed;
         border-radius: 1rem;
